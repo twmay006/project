@@ -59,7 +59,7 @@
 				html += `
 							<li>
 								<a href="view/detail.html">
-									<img src="${p.pic1}">
+									<img src="../${p.pic1}">
 								</a>
 								<div>
 									<p>
@@ -72,7 +72,7 @@
 								<p>
 									<img src="${p.pic2}">
 									<a href="${p.pid}" class="addcart">
-										<img  src="${p.pic3}">
+										<img  src="../${p.pic3}">
 									</a>
 								</p>
 							</li>
@@ -92,7 +92,7 @@
 		//把登录的用户名和产品编号异步提交给服务器
 		$.ajax({
 			type: 'POST',
-			url: '../data/ca.php',
+			url: 'data/ca.php',
 			data: {uname: sessionStorage['loginName'], pid: pid},
 			success: function (result) {
 				if (result.msg === 'succ') {
