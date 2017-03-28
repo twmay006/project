@@ -38,7 +38,7 @@
 					$('#login').html('欢迎登录:' + uname);
 					sessionStorage.setItem('loginName', uname);//把登录用户名保存到全局
 				} else {
-					$('.modal').html(txt);
+					$('.modal').fadeOut(300);
 				}
 			}
 		})
@@ -57,12 +57,12 @@
 				var p = list[i];
 				html += `
 							<li>
-								<a href="detail.html">
+								<a href="view/detail.html">
 									<img src="${p.pic1}">
 								</a>
 								<div>
 									<p>
-										<a href="#">${p.pname}</a>
+										<a href="javascript:;">${p.pname}</a>
 									</p>
 									<p>
 										￥${p.price}
@@ -88,7 +88,7 @@
 		//把登录的用户名和产品编号异步提交给服务器
 		$.ajax({
 			type: 'POST',
-			url: 'data/ca.php',
+			url: '../data/ca.php',
 			data: {uname: sessionStorage['loginName'], pid: pid},
 			success: function (result) {
 				if (result.msg === 'succ') {
@@ -101,10 +101,6 @@
 		});
 	});
 
-//点击购物车去结算，跳转到购物车详情页
-	$('#shopping').on('click', '#shoppingcart', function () {
-		location.href = "shoppingcart.html";
-	})
 /**************轮播*************/
 var Img=document.querySelector(".banner").getElementsByTagName('li');
 Img[0].style.display="block";

@@ -1,7 +1,7 @@
 /*******异步加载头部和尾部*******/
 $(function(){
-	$("#header_box").load('data/header.php');
-	$('#footer').load('data/footer.php');
+	$("#header_box").load('../data/header.php');
+	$('#footer').load('../data/footer.php');
 });
 /*******悬浮对应显示*************/
 var Img1 =document.querySelectorAll(".content_bigimg")[0].getElementsByTagName('img');

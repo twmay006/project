@@ -1,6 +1,6 @@
 /********异步加载页尾*********/
 $(function(){
-	$('#footer').load('data/footer.php');
+	$('#footer').load('../data/footer.php');
 });
 /*********用户注册信息提交*************/
  $('#btn').click(function(){
@@ -11,7 +11,7 @@ $(function(){
             success:function(result){
                 if(result.code==1){
                     setInterval (function(){
-                        location.href='yoho.html';
+                        location.href='../index.html';
                     },1000)
 					$('#login').html('欢迎登录:'+uname.value);
                 }else {

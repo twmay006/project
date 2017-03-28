@@ -1,11 +1,11 @@
 /********异步加载头部尾部**********/
 $(function(){
-	if(!sessionStorage ['loginName']){
-	location.href="yoho.html";
-	}
-	$('#header').load('data/header.php',function(){$('#login').html(sessionStorage ['loginName']+'的购物车');
+//	if(!sessionStorage ['loginName']){
+//	location.href="../index.html";
+//	}
+	$('#header').load('../data/header.php',function(){$('#login').html(sessionStorage ['loginName']+'的购物车');
 	});
-	$('#footer').load('data/footer.php');
+	$('#footer').load('../data/footer.php');
 /********头部属性内容切换********/
 	$('.yoho-group').mouseover(function(){
 				$(this).html($(this).attr('data-cn'));
@@ -17,7 +17,7 @@ $(function(){
 /*购物车详情*/
 	$.ajax({
 		type:'GET',
-		url:'data/cart_detail.php',
+		url:'../data/cart_detail.php',
 		data:{uname:sessionStorage['loginName'] },
 		success:function(list){
 			var html="";

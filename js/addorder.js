@@ -1,16 +1,13 @@
 /***********购物车订单详情*************/
 $(function(){
-                if(!sessionStorage ['loginName']){
-                    location.href="yoho.html";
-                }
-                $('#header').load('data/header.php',function(){
+                $('#header').load('../data/header.php',function(){
                     //判断当前是否已经登录，修改欢迎消息
                     var uname=sessionStorage ['loginName'];
                     if(uname){
                         $('#login').html('欢迎登录：'+uname);
                     }
                 });
-				$('#footer').load('data/footer.php');
+				$('#footer').load('../data/footer.php');
             });
 			
             //为支付方式的选择添加事件监听
@@ -23,7 +20,7 @@ $(function(){
             //异步请求购物车中的内容，再次给用户呈现出来，同时计算商品总价格，修改name=price隐藏域的值
             $.ajax({
                 type:'GET',
-                url:'data/cart_detail.php',
+                url:'../data/cart_detail.php',
                 data:{uname:sessionStorage['loginName'] },
                 success:function(list){
                     var html='';
