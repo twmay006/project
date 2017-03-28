@@ -51,15 +51,18 @@
 		url: 'data/product_select.php',
 		success: function (list, msg, xhr) {
 			//console.log('开始处理响应数据');
-			console.log(arguments);
-			
+			if(typeof list=="string"){
+				var n=14;
+			}else{
+				var n=list.length;
+			}
 			var html = "";
-			for (var i = 0; i < list.length; i++) {
+			for (var i = 0; i < n; i++) {
 				var p = list[i];
 				html += `
 							<li>
 								<a href="view/detail.html">
-									<img src="../${p.pic1}">
+									<img src="${p.pic1}">
 								</a>
 								<div>
 									<p>
@@ -72,7 +75,7 @@
 								<p>
 									<img src="${p.pic2}">
 									<a href="${p.pid}" class="addcart">
-										<img  src="../${p.pic3}">
+										<img  src="${p.pic3}">
 									</a>
 								</p>
 							</li>
