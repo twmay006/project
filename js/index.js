@@ -40,6 +40,9 @@
 				} else {
 					$('.modal').fadeOut(300);
 				}
+			},
+			error:function(err){
+				console.log(err.message);$('.modal').fadeOut(300);
 			}
 		})
 
@@ -52,7 +55,7 @@
 		success: function (list, msg, xhr) {
 			//console.log('开始处理响应数据');
 			if(typeof list=="string"){
-				var n=14;
+				var n=12;
 			}else{
 				var n=list.length;
 			}
