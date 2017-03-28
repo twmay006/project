@@ -51,7 +51,8 @@
 		url: 'data/product_select.php',
 		success: function (list, msg, xhr) {
 			//console.log('开始处理响应数据');
-			//console.log(arguments);
+			console.log(arguments);
+			
 			var html = "";
 			for (var i = 0; i < list.length; i++) {
 				var p = list[i];
