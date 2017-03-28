@@ -1,0 +1,428 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  color: #8e8e8e;
+  font-family: arial,SimHei;
+}
+a{
+	text-decoration: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+h2{
+	color:#000;
+	font-size:18px;
+	display:inline-block;
+}
+.clear{
+	clear:both;
+}
+/*********货物详情***********/
+#page{
+	width:100%;
+}
+#page1,#page2,#page3{
+	width:1150px;
+	margin:0 auto 30px;
+}
+#page1>p{
+	padding:15px 0;
+}
+#page1>p>a:last-child{
+	font-weight:bold;
+}
+#page1:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.container{
+	width:990px;
+	margin:0 auto;
+}
+.content_left{
+	display:none;
+}
+.content_box{
+	position:absolute;
+	z-index:5;
+	left:640px;
+}
+.cover_box{
+	width:210px;
+	height:280px;
+	background:#fff;
+	opacity:0.8;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:5;
+}
+.cover{
+	width:420px;
+	height:560px;
+	opacity:0;
+	position:absolute;
+	z-index:6;
+}
+.content_box>div{
+	width:420px;
+	height:560px;
+	overflow: hidden;
+	position:relative;
+}
+.content_box>div>img{
+	position:absolute;
+}
+.content_bigimg{
+	position:relative;
+	width:420px;
+	height:560px;
+	margin-right:5px;
+}
+.content_bigimg>img{
+	position:absolute;
+	display:none;
+}
+.content_right{
+	margin-right:130px;
+}
+.content_right p{
+	padding:5px 0;
+}
+.inline{
+	display:inline-block;
+}
+.life_jack>p>span,.shop_price>p>span{
+	color:#000;
+	padding-left:5px;
+}
+.shop_price{
+	padding-bottom:15px;
+	border-bottom:1px solid  #ccc;
+}
+.shop_price>p{
+	padding:2px 0;
+}
+.shop_price>p>b{
+	display:inline-block;
+	width:50px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	color:#fff;
+	background:#ccc;
+
+}
+.choice_color{
+	margin-top: 20px;
+}
+.choice_color>img{
+	vertical-align: middle;
+	margin-top: -4px;
+	width:42px;
+	height:42px;
+	box-sizing:border-box;
+}
+.add-border{
+	border:2px solid #000;
+}
+.choice_size>u{
+	text-decoration: none;
+	display:inline-block;
+	padding:3px 8px;
+	border: 1px solid #ccc;
+	text-align:center;
+}
+.choice_number{
+	margin-top: 10px;
+}
+.choice_number>div{
+	display:inline-block;
+	background:#ddd;
+ 	text-align:center;
+}
+.choice_number>div>p{
+	display:inline-block;
+	vertical-align: middle;
+	padding:0;
+}
+.choice_number>div>span{
+	padding:0 12px;
+}
+.choice_number>div>p>img{
+	margin-top: 1px;
+	display:block;
+	margin-right: 1px;
+}
+.choice_number>div>p>img:nth-child(2){
+	margin-bottom:1px;
+}
+.add_shopcar,.add_collet{
+	display:inline-block;
+	width:150px;
+	height:30px;
+	border:1px solid red;
+	text-align:center;
+	line-height:30px;
+	margin-top:20px;
+}
+.add_shopcar{
+	background:#e92603;
+}
+.add_shopcar>span{
+	color:#fff;
+}
+.add_collet{
+	margin-left:20px;
+	border:1px solid #ddd;
+}
+.add_collet>span{
+	color:#000;
+}
+.share{
+	margin-top: 20px;
+}
+.share a{
+	width:16px;
+	height:16px;
+	background:url(../images/share.png);
+	display:inline-block;
+}
+.share a:nth-child(2){
+	background-position: -18px  0;
+}
+.share a:nth-child(3){
+	background-position: -36px  0;
+}
+.share a:nth-child(4){
+	background-position: 0  -18px;
+}
+.share a:nth-child(5){
+	background-position: -18px -18px
+}
+.share a:nth-child(6){
+	background-position: -36px -18px
+}
+.share a:nth-child(7){
+	background-position: 0 -36px
+}
+/***********PAGE2*************/
+.page_box{
+	border-top: 2px solid #ccc;
+	width:990px;
+	margin:0 auto;
+}
+.description_box>p{
+	text-align: center;
+	margin-bottom: 27px;
+}
+.description_box>p>span{
+	padding-top: 15px;
+}
+.description_box>p>span:nth-child(2){
+	height:14px;
+	display:inline-block;
+	margin:0 30px;
+}
+.cur{
+	color:#222;
+	margin-top:-2px;
+	border-top: 2px solid #222;
+	font-weight:700;
+	padding-top:15px;
+	display:inline-block;
+}
+.description{
+	width:990px;
+	margin:0 auto;
+}
+.description>ul.basic{
+	width:640px;
+	margin:0 auto;
+}
+.description>ul:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.description>.basic>li{
+	width:25%;
+	float:left;
+	line-height:20px;
+}
+.description .comfort{
+	width:470px;
+	border:1px solid #ccc;
+	margin:17px auto 30px;
+	padding-bottom: 15px;
+}
+.description .comfort:after{
+	display:block;
+	content:'';
+	clear:both;
+}
+.description .comfort>li{
+	float:left;
+	margin:12px 16px 0;
+}
+.comfort_block{
+	width:14px;
+	height:10px;
+	border:1px solid #ccc;
+	margin-right:2px;
+	display:inline-block;
+}
+.bg_color{
+	background:#999;
+}
+.size_info>p{
+	text-align: center;
+	margin-bottom: 27px;
+}
+.size_info>p>span{
+
+}
+.size_table{
+	margin:0 auto;
+	border-spacing: 0;
+	margin-bottom: 10px;
+}
+.size_table>thead{
+	background:#f5f6f7;
+}
+.size_table>thead th{
+	width:110px;
+	text-align:center;
+	font-weight:500;
+	height:30px;
+}
+.size_table>tbody td{
+	width:110px;
+	text-align:center;
+	font-weight:500;
+	height:30px;
+}
+.size_p{
+	font-size:12px;
+	text-align: center;
+	margin-top:10px;
+}
+.details{
+	width:1150px;
+	border-top:2px solid #ccc;
+}
+.details>p{
+	text-align:center;
+}
+.details>div{
+	text-align:center;
+	width:750px;
+	margin:0 auto;
+}
+.details>div>p{
+	margin:20px 0;
+}
+/*********PAGE3*************/
+.title{
+	padding-top:15px;
+	display:inline-block;
+}
+.pad{
+	padding:0 12px;
+}
+.comment_box>p{
+	text-align:center;
+	margin-bottom: 15px;
+}
+.cur{
+	color:#000;
+	margin-top:-2px;
+	border-top:2px solid #000;
+}
+.comment_content{
+	width:990px;
+	margin:0 auto;
+	background:#f5f7f6;
+	padding:20px;
+}
+.all_comment{
+	border-bottom:2px solid #ccc;
+	margin-bottom: 10px;
+}
+.all_img{
+	display:inline-block;
+	padding-bottom: 15px;
+	margin-right:15px;
+	margin-bottom: -2px;
+}
+.border_bottom{
+	color:#000;
+	border-bottom: 2px solid #000;
+}
+.comment_list li{
+	padding:20px 0;
+	border-bottom: 1px solid #ccc;
+}
+.user{
+	width:120px;
+	text-align:center;
+}
+.user dd{
+	padding-top:5px;
+}
+.size-color{
+	margin-right:20px;
+	width:100px;
+	text-align:center
+}
+.size-color>p{
+	padding:3px 0;
+}
+.comment-detail{
+	width: 700px;
+	margin-left:120px;
+}
+.comment-detail p>span{
+	display:inline-block;
+	float:left;
+	width:18px;
+	height:18px;
+	background-image:url(../images/star.png);
+}
+.comment-detail>div{
+	height:25px;
+}
+.comment-detail>p{
+	padding-bottom:10px;
+}
+.comment-detail>div:after{
+	clear:both;
+	display:block;
+	content:"";
+}
+.position1{
+	background-position: 0 -2px;
+}
+.position2{
+	background-position: 0 -22px;
+}
+.position3{
+	background-position: 0 -43px;
+}
+.position4{
+	background-position: 0 -63px;
+}
+.comment-detail dl {
+	float:right;
+}
+.comment-detail dd{
+	float:left;
+	padding-left:20px;
+}

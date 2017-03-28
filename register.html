@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>yoho</title>
+    <link rel="stylesheet" href="css/register.css "/>
+	<link rel="stylesheet" href="css/index.css "/>
+</head>
+<body>
+<div id="register_top">
+	<div class="register_img">
+		<img src="images/logo-en.png">
+	</div>
+	<div>
+		<ul class="register-list">
+			<li>
+				<span>hi~</span>
+				<a href="#" id='login'>
+					<span>[</span>请登录<span>]</span>			
+				</a>
+				<a href="register.html">
+					<span>[</span>免费注册<span>]</span>
+				</a>
+			</li>
+			<li class="myyoho">
+				<b></b>
+				<a href="#">MY有货
+					<span></span>
+				</a>
+			</li>
+			<li class="myorder">
+				<b></b>
+				<span></span>
+				<a href="#">我的订单</a>
+			</li>
+			<li class="mycollect">
+				<b></b>
+				<span></span>
+				<a href="#">我的收藏</a>
+			</li>
+			<li class="message">
+				<b></b>
+				<span></span>
+				<a href="#">消息</a>
+			</li>
+		</ul>		
+	</div>
+</div>
+<div id="register">
+	<img src="images/logo-en.png">
+    <div class="vio">
+        <video src="snow.mp4  " loop autoplay muted width="900px"></video>
+    </div>
+    <div class="container">
+            <div class="form-group">
+                <label for="uname" class="control-label">用户名：</label>
+                <input type="text" class="from-control" name="uname" id="uname" required autofocus minlength="8"maxlength="16"placeholder="请输入用户名"/>
+                <span class="help-block">请输入8-16位英文或数字</span>
+            </div>
+            <div class="form-group">
+                <label for="upwd" class="control-label">密码：</label>
+                <input type="password " name="upwd" class="from-control" id="upwd" required  minlength="8"maxlength="16"placeholder="请输入密码"/>
+                <span class="help-block">请输入8-16位英文或数字</span>
+            </div>
+            <div class="form-group">
+                <label for="email" class="control-label">电子邮件：</label>
+                <input type="email" class="from-control" id="email" required  placeholder="请输入电子邮件"/>
+                <span class="help-block">请输入正确的邮箱</span>
+            </div>
+            <div class="form-group">
+                <label for="age" class="control-label">年龄：</label>
+                <input type="number" class="from-control" id="age" required placeholder="请输入您的年龄" max="65"min="18"autocomplete="off"/>
+                <span class="help-block">请输入您的真实年龄</span>
+            </div>
+            <div class="form-group">
+                <label for="birth" class="control-label">出生日期：</label>
+                <input type="date" class="from-control" id="birth" required placeholder="年/月/日" />
+                <span class="help-block">请选择您的出生日期</span>
+            </div>
+            <span class="control-label "></span>
+            <input id="btn" type="submit" value="注册"/>
+    </div>
+</div>
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js "></script>
+<script src="js/register.js "></script>
+</body>
+</html>
