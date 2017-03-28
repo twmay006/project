@@ -79,6 +79,9 @@
 						`;
 			}
 			$('.commodity').html(html);
+		},
+		error:function(err){
+			console.log(err.message);
 		}
 	});
 
