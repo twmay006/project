@@ -23,7 +23,8 @@ $(function(){
 			var html="";
 			var Price=0;
 			if(list.msg==='err'||list.length==0){
-				html='<tr><td colspan="6">您尚未添加任何商品到购物车！</td></tr>'
+				html='<tr><td colspan="6">您尚未添加任何商品到购物车！</td></tr>';
+				return false;
 			}
 			$.each(list,function(i,p){
 				Price+=p.price*p.count;
@@ -72,10 +73,7 @@ $('#cart').on('click','button',function(){
 		url:'data/cart_update.php',
 		data:{did:did,count:count},
 		success:function(result){
-				
 			console.log('修改成功');
-			
-			
 		}
 	
 	})
