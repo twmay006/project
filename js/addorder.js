@@ -23,6 +23,7 @@ $(function(){
                 url:'../data/cart_detail.php',
                 data:{uname:sessionStorage['loginName'] },
                 success:function(list){
+                	if(typeof list=="string")return false;
                     var html='';
                     var sum=0;//购物车总金额
 					var n=0;//购买数量
@@ -60,7 +61,6 @@ $(function(){
                 //获取所有用户的输入
                 var str=$('#form-myorder').serialize ();
                 str+='&uname='+sessionStorage ['loginName'];
-                console.log(str);
                 //异步提交用户输入数据
                 $.ajax({
                     type:'POST',
