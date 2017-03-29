@@ -22,7 +22,7 @@ $(function(){
 		success:function(list){
 			var html="";
 			var Price=0;
-			if(list.msg==='err'||list.length==0){
+			if(list.msg==='err'||list.length==0||typeof list=="string"){
 				html='<tr><td colspan="6">您尚未添加任何商品到购物车！</td></tr>';
 				return false;
 			}
