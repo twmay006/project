@@ -1,3 +1,6 @@
+.main{
+	min-height: 300px;
+}
 #cart{
     border: 1px solid #f1f1f1;
     border-top:2px solid #aaa;
@@ -6,7 +9,6 @@
     margin:0px auto;
     margin-top:50px;
     border-collapse: collapse;
-    min-height: 150px;
 }
 #cart td,#cart th{
     min-height:40px;
