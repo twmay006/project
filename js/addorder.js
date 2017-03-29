@@ -64,7 +64,7 @@ $(function(){
                 //异步提交用户输入数据
                 $.ajax({
                     type:'POST',
-                    url:'data/order_add.php',
+                    url:'../data/order_add.php',
                     data:str,
                     success:function(result){
                         console.log('异步请求成功');
@@ -80,6 +80,7 @@ $(function(){
                     },
                     error:function(result){
                         console.log("ktu"+result);
+                        location.href="addorder_result.html";
                     }
                 })
 
