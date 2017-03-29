@@ -1,5 +1,4 @@
-#cart
-{
+#cart{
     border: 1px solid #f1f1f1;
     border-top:2px solid #aaa;
     width:900px;
@@ -7,6 +6,7 @@
     margin:0px auto;
     margin-top:50px;
     border-collapse: collapse;
+    min-height: 150px;
 }
 #cart td,#cart th{
     min-height:40px;
@@ -107,12 +107,12 @@ body{
     overflow-x: hidden;
 }
 
-/*transition¹ý¶É£ºÄ³ÖÖÑùÊ½ÊôÐÔ£¨ÊýÖµ£©ÔÚÒ»¶ÎÊ±¼äÄÚ»ºÂý±ä»¯*/
+/*transitionï¿½ï¿½É£ï¿½Ä³ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½ä»¯*/
 #cart tbody img{
     transition: transform 0.5s linear;
 }
 
-/*transform£º×ª»»£¨±äÐÎ£º·Å´ó¡¢ÒÆ¶¯¡¢Ðý×ª¡¢skew£©*/
+/*transformï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î£ï¿½ï¿½Å´ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½skewï¿½ï¿½*/
 #cart tbody img:hover{
     transform:scale(1.1);
     /*transform:rotate(45deg);*/
