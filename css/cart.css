@@ -119,6 +119,9 @@ body{
     transform:scale(1.1);
     /*transform:rotate(45deg);*/
 }
+#footer{
+	height: 370px;
+}
 /*#cart:hover::before{
     transition: left 3s;
     left: 1360px;
